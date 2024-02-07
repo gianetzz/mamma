@@ -1,0 +1,75 @@
+@import url("http://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap");
+       * {
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+           font-family: 'Poppins', sans-serif;
+       }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: powderblue;
+        }
+        h2   {
+            font-size: 3em;
+            margin: 15px 0;
+            color: blue;
+
+        }
+        p    {color: red;}
+
+        .buttons {
+            width: 100%;
+            height: 40px;
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+        }
+
+        button {
+            position: absolute;
+            width: 150px;
+            height: inherit;
+            font-size: 1.2em;
+            font-weight: 600;
+            border-radius: 30px;
+            border: 2px solid powderblue;
+            outline: none;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+        }
+
+        button:nth-child(1) {
+            margin-left: -200px;
+            background: powderblue;
+        }
+
+        button:nth-child(2) {
+            margin-right: -200px;
+            background: powderblue;
+        }
+
+        .photo_container {
+            width: 300px; /* Adjust the width of the container as needed */
+         height: auto; /* This ensures the height adjusts proportionally with the width */
+        }
+
+        .photo_container img {
+            width: 100%; /* Make the image fill the container width */
+            height: auto; /* Ensure the image maintains its aspect ratio */
+        }
+
+        .wrapper {
+            position: relative;
+            width: 600px;
+            height: 400px;
+            background: white;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
